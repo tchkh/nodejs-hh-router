@@ -1,4 +1,4 @@
-import { assignments as assignmentsFromFile } from './data/assignments.js'
+import { assignments as assignmentsFromFile } from '../data/assignments.js'
 
 let assignments = [...assignmentsFromFile]
 
@@ -8,7 +8,7 @@ export const getAllAssignments = (req, res) => {
   })
 }
 
-export const getAssigmentById = (req, res) => {
+export const getAssignmentById = (req, res) => {
   const assignmentId = +req.params.id
   const hasFound = assignments.find(assign => assign.id === assignmentId)
 

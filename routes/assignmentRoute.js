@@ -3,14 +3,14 @@ import {
   createAssignment,
   deleteAssignment,
   getAllAssignments,
-  getAssigmentById,
+  getAssignmentById,
   updateAssignment,
-} from '../controllers/assigmentController'
+} from '../controllers/assignmentController.js'
 
 const assignmentRouter = Router()
 
 assignmentRouter.get('/', getAllAssignments)
-assignmentRouter.get('/:id', getAssigmentById)
+assignmentRouter.get('/:id', getAssignmentById)
 assignmentRouter.post('/assignments', createAssignment)
 assignmentRouter.put('/:id', updateAssignment)
 assignmentRouter.delete('/:id', deleteAssignment)

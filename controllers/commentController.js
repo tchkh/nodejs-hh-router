@@ -1,4 +1,4 @@
-import { comments as commentsFromFile } from './data/comments.js'
+import { comments as commentsFromFile } from '../data/comments.js'
 
 let comments = [...commentsFromFile]
 
