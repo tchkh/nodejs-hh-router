@@ -14,19 +14,9 @@ app.get('/', (req, res) => {
 })
 
 app.use('/assignments', assignmentRouter)
-app.use('/assignments', assignmentRouter)
-app.use('/assignments', assignmentRouter)
-app.use('/assignments', assignmentRouter)
-app.use('/assignments', assignmentRouter)
 
 app.use('/:id/comments', commentRouter)
-app.use('/:id/comments', commentRouter)
-app.use('/:id/comments', commentRouter)
 
-app.use('/accounts', accountRouter)
-app.use('/accounts', accountRouter)
-app.use('/accounts', accountRouter)
-app.use('/accounts', accountRouter)
 app.use('/accounts', accountRouter)
 
 app.listen(port, () => {
